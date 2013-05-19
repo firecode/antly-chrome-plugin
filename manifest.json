@@ -1,0 +1,13 @@
+{
+  "name": "antly",
+  "version": "1.0",
+  "manifest_version": 1,
+  "description": "share pieces you like",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs"
+  ]
+}
