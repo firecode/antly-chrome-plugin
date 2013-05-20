@@ -4,22 +4,17 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script type="text/javascript" src="popup.js"></script>
 	<script type="text/javascript">
-		$('#selectedAdder').click(function(){
-			var text = '';
-            if(window.getSelection){
-              text = window.getSelection();
-            }else if(document.getSelection){
-              text = document.getSelection();
-            }else if(document.selection){
-              text = document.selection.createRange().text;
-            }
-            text=text.toString();
-            alert(text);
-		});
+		function printSelectedText(){
+			chrome.tabs.executeScript(null, {code:"alert(window.getSelection().toString());"});
+		}
 	
 	</script>
 </head>
 <body>
-	<a href="#" id="selectedAdder">popup</div>
+	<a href="#" id="selectedAdder" onclick="printSelectedText();">popup</a>
 </body>
+<head>
+	
+
+</head>
 </html>
