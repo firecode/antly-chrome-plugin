@@ -1,20 +1,11 @@
 <html>
 <head>
-	<style type="text/css" scr="popup.css"></style>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script type="text/javascript" src="popup.js"></script>
-	<script type="text/javascript">
-		function printSelectedText(){
-			chrome.tabs.executeScript(null, {code:"alert(window.getSelection().toString());"});
-		}
-	
-	</script>
+<style type="text/css" scr="popup.css"></style>
+<script type="text/javascript" src="popup.js"></script>
 </head>
 <body>
-	<a href="#" id="selectedAdder" onclick="printSelectedText();">popup</a>
+	<a href="#" id="selectedAdder">popup</a>
 </body>
 <head>
-	
-
 </head>
 </html>
